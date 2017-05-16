@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ek Mukta Light'), local('EkMukta-Light'), url(https://fonts.gstatic.com/s/ekmukta/v7/eZfvCT6XSiuTQmmC8YaT244P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Ek Mukta', helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(https://fonts.gstatic.com/s/ekmukta/v7/bd9w3t1zRrt_-4XQNqfNJPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+@font-face {
+  font-family: 'Ek Mukta', helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ek Mukta Bold'), local('EkMukta-Bold'), url(https://fonts.gstatic.com/s/ekmukta/v7/PTj8SjnLMuoZrJLoiRjMXo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Universal */
+
+html{
+  font-family: "ek mukta", helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h3{
+  font-size: 1.5rem;
+}
+/* Header with Navigation */
+header{
+  display: flex;
+  height: 1.75rem;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+header .left_header, header .right_header{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.left_header img{
+  margin-right: 0.5rem;
+  width: 2.5rem;
+}
+
+.left_header h2 span{
+  color: lightgrey;
+}
+
+.menu {
+  display: flex;
+  }
+
+.menu li{
+  margin: 0 1rem;
+}
+
+/*Upper Banner*/
+
+.flex_container{
+  display:flex;
+  width: 100%;
+}
+
+.upper_banner{
+  display: flex;
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.right_banner{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 13rem 0 0 7rem;
+}
+
+.left_picture{
+  width: 55%;
+}
+
+.left_picture img{
+  height: auto;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.banner_text h3{
+  padding: 2rem 0rem;
+  text-align: left;
+}
+.btn{
+  margin: 0 auto;
+}
+button {
+  width: 24.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 2px;
+  border-color: darkgrey;
+  background-color: grey;
+}
+button:hover{
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 1px 1px 0 black;
+  transition-duration: .75s;
+}
+button a{
+  padding: 3rem 10rem;
+}
+
+/*Lower Banner*/
+.lower_banner{
+  display: flex;
+  width: 100%;
+}
+.announcements{
+  display: flex;
+  flex-direction: column;
+}
+
+.course{
+  display: flex;
+}
