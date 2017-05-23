@@ -40,20 +40,36 @@ h2{
   font-weight: bold;
 }
 h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h4{
   font-size: 1.5rem;
 }
+.flex_container{
+  display:flex;
+  width: 100%;
+}
+
 /* Header with Navigation */
 header{
   display: flex;
   height: 1.75rem;
   padding: 1rem 1.5rem;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 header .left_header, header .right_header{
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+header .right_header {
+  margin-right: 2rem;
 }
 
 .left_header img{
@@ -70,15 +86,11 @@ header .left_header, header .right_header{
   }
 
 .menu li{
+  font-size: 1.1rem;
   margin: 0 1rem;
 }
 
 /*Upper Banner*/
-
-.flex_container{
-  display:flex;
-  width: 100%;
-}
 
 .upper_banner{
   display: flex;
@@ -87,25 +99,26 @@ header .left_header, header .right_header{
 }
 
 .right_banner{
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  margin: 13rem 0 0 7rem;
+  margin: 10rem 0 0 7rem;
 }
 
-.left_picture{
-  width: 55%;
+.ub_picture{
+  width: 60%;
 }
 
-.left_picture img{
+.ub_picture img{
   height: auto;
   width: 100%;
   padding: 1rem 2rem;
 }
 
-.banner_text h3{
+.banner_text h2{
   padding: 2rem 0rem;
   text-align: left;
+  font-weight: normal;
 }
 .btn{
   margin: 0 auto;
@@ -114,28 +127,162 @@ button {
   width: 24.5rem;
   height: 2.5rem;
   font-size: 1.25rem;
-  border-radius: 2px;
-  border-color: darkgrey;
   background-color: grey;
 }
-button:hover{
-  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 1px 1px 0 black;
-  transition-duration: .75s;
-}
 button a{
-  padding: 3rem 10rem;
+  color: white;
+  letter-spacing: .05rem;
 }
 
 /*Lower Banner*/
 .lower_banner{
   display: flex;
   width: 100%;
+  padding-bottom: 3rem;
 }
 .announcements{
   display: flex;
   flex-direction: column;
+  margin-left: 7rem;
+}
+.announcements img{
+  padding-top: 1rem;
+}
+.announcement_img{
+  width: 28%;
+}
+.announcement_img img{
+  width: 100%;
 }
 
-.course{
+.announcement_section{
   display: flex;
 }
+.left_section{
+  width: 60%;
+}
+.lb_picture img{
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.banner_text{
+padding: 1rem 2rem;
+}
+.banner_text h3{
+  margin-bottom: 1.5rem;
+}
+.quote_author{
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+.details{
+  margin: 1rem;
+}
+.details h5{
+  margin: 1rem 0 3rem 0;
+}
+
+/*Start Learning Section*/
+.learning_container{
+  background-color: lightgrey;
+  padding: 2rem 0 4rem 0;
+}
+.learning_title{
+  text-align: center;
+  padding: 1rem;
+}
+.start_learning{
+  display: flex;
+  flex-wrap: wrap;
+}
+.start_learning img{
+  width: 100%;
+}
+.course{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 1rem;
+}
+.course img{
+  width: 100%;
+}
+.course_grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.course_text{
+  text-align: left;
+  padding: 1rem 1rem 3rem 1rem;
+  background-color: white;
+  height: 5.5rem;
+
+}
+.course_text h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.course_text p{
+  margin: .5rem;
+}
+
+
+/* Lower Banner */
+ .thesis_exhibit_container{
+   margin-top: 2rem;
+   display: flex;
+ }
+ .left_video video{
+   width: 100%;
+   padding: 1rem 2rem;
+ }
+.thesis{
+   display: flex;
+   margin-left: 4rem;
+   flex-direction: column;
+   width: 45%;
+ }
+ .exhibits{
+   width: 80%;
+   display: flex;
+ }
+ .exhibits_img{
+   width: 100%;
+ }
+ .exhibits_img img{
+   padding-top: 1rem;
+ }
+ .exhibits_text{
+   margin-top: 2rem;
+   margin-left: 1rem;
+   width: 30rem;
+ }
+ .exhibits_text h5{
+   margin: 1rem 0;
+ }
+ .banner_text h4{
+   margin-bottom: 1rem;
+ }
+
+ /* Footer */
+ footer{
+   border-top: 1px solid black;
+   padding-top: 1rem;
+   margin: 5rem 1rem 1rem 1rem;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ footer .left_header, footer .right_header{
+   display: flex;
+   text-align: center;
+   align-items: center;
+ }
+ footer .right_header {
+
+ }
+ footer .menu {
+   display: flex;
+   }
