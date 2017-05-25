@@ -23,18 +23,16 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-/* Universal */
 
+/* Universal */
 html{
   font-family: "ek mukta", helvetica, sans-serif;
   font-size: 16px;
 }
-
 h1{
   font-size: 3.5rem;
   font-weight: bold;
 }
-
 h2{
   font-size: 1.5rem;
   font-weight: bold;
@@ -48,8 +46,8 @@ h4{
 }
 .flex_container{
   display:flex;
-  width: 100%;
 }
+
 
 /* Header with Navigation */
 header{
@@ -61,30 +59,20 @@ header{
   background-color: white;
   width: 100%;
 }
-
 header .left_header, header .right_header{
   display: flex;
-  text-align: center;
   align-items: center;
 }
-
-header .right_header {
-  margin-right: 2rem;
-}
-
 .left_header img{
   margin-right: 0.5rem;
   width: 2.5rem;
 }
-
 .left_header h2 span{
   color: lightgrey;
 }
-
 .menu {
   display: flex;
   }
-
 .menu li{
   font-size: 1.1rem;
   margin: 0 1rem;
@@ -93,8 +81,9 @@ header .right_header {
   display: none;
 }
 
-@media only screen and (max-width: 480px){
+
   /*Mobile Header*/
+@media only screen and (max-width: 480px){
   header{
     padding: 1rem 0;
   }
@@ -116,7 +105,6 @@ header .right_header {
     height: 2rem;
     margin: 0 1rem;
   }
-
 }
 
 
@@ -127,30 +115,24 @@ header .right_header {
   background-color: lightgrey;
   width: 100%;
 }
-
 .right_banner{
   width: 30%;
   display: flex;
   flex-direction: column;
   margin: 7rem 0 0 7rem;
 }
-
 .ub_picture{
   width: 60%;
 }
-
 .ub_picture img{
-  height: auto;
   width: 100%;
   padding: 1rem 2rem;
 }
-
 .banner_text h2{
   padding: 2rem 0rem;
   text-align: left;
   font-weight: normal;
 }
-
 button {
   width: 100%;
   height: 2.5rem;
@@ -169,14 +151,15 @@ button a{
   width: 60%;
 }
 
+
 /*Mobile Upper Banner*/
 @media only screen and (max-width: 700px){
   .flex_container{
-    flex-direction: column;
+      flex-direction: column;
+    }
+  .upper_banner{
+    display: block;
   }
-.upper_banner{
-  display: block;
-}
   .ub_picture img{
     display: none;
   }
@@ -215,8 +198,8 @@ button a{
     width: 75%;
     margin: 0 auto 1rem auto;
   }
-
 }
+
 
 /*Tablet Upper Banner*/
 @media only screen and (max-width: 1180px){
@@ -238,15 +221,13 @@ button a{
   }
 }
 
+
 /*Lower Banner*/
 .lower_banner{
   display: flex;
-  width: 100%;
   padding-bottom: 3rem;
 }
 .announcements{
-  display: flex;
-  flex-direction: column;
   margin-left: 7rem;
 }
 .announcements img{
@@ -258,7 +239,6 @@ button a{
 .announcement_img img{
   width: 100%;
 }
-
 .announcement_section{
   display: flex;
 }
@@ -295,6 +275,7 @@ padding: 1rem 2rem;
   display: none;
 }
 
+
 /*Mobile Lower Banner*/
 @media only screen and (max-width: 480px){
   .lower_banner .left_section{
@@ -318,27 +299,28 @@ padding: 1rem 2rem;
   .lower_banner #mobile_lecture{
     display:block;
   }
-.announcement_section{
-  flex-direction: column;
-  text-align: center;
+  .announcement_section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .announcement_section h4{
+    font-weight: bold;
+  }
+  .announcements{
+    margin: 0;
+  }
+  .announcement_img {
+    width: 100%;
+  }
+  .details h5 {
+    margin-bottom: 1rem;
+  }
+  .details a{
+    color: blue;
+    text-decoration: underline;
+  }
 }
-.announcement_section h4{
-  font-weight: bold;
-}
-.announcements{
-  margin: 0;
-}
-.announcement_img {
-  width: 100%;
-}
-.details h5 {
-  margin-bottom: 1rem;
-}
-.details a{
-  color: blue;
-  text-decoration: underline;
-}
-}
+
 
 /*tablet lower banner*/
 @media only screen and (max-width: 720px) {
@@ -361,6 +343,7 @@ header .right_header{
     margin: 0 1rem;
   }
 }
+
 
 /*Start Learning Section*/
 .learning_container{
@@ -397,7 +380,6 @@ header .right_header{
   padding: 1rem 1rem 3rem 1rem;
   background-color: white;
   height: 5.5rem;
-
 }
 .course_text h3{
   font-size: 2rem;
@@ -411,6 +393,7 @@ header .right_header{
   display:none;
 }
 
+
 /*Mobile Start Learning*/
 @media only screen and (max-width: 690px){
   .learning_container{
@@ -420,35 +403,36 @@ header .right_header{
     display: flex;
     flex-direction: column;
   }
-.mobile_course_list{
-  display: flex;
-  flex-direction: column;
+  .mobile_course_list{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile_course_list ul li{
+    background-color: lightgrey;
+    font-size: 1rem;
+    margin: .5rem auto;
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .mobile_course_list ul li h5{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+  }
+  .learning_title{
+    margin: 0;
+  }
+  .learning_title h1{
+    padding: 2rem 0 2rem 0;
+    margin: 0;
+  }
+  .mobile_course_title{
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
 }
-.mobile_course_list ul li{
-  background-color: lightgrey;
-  font-size: 1rem;
-  margin: .5rem auto;
-  padding: 1rem 0;
-  width: 80%;
-}
-.mobile_course_list ul li h5{
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-left: 1.25rem;
-}
-.learning_title{
-  margin: 0;
-}
-.learning_title h1{
-  padding: 2rem 0 2rem 0;
-  margin: 0;
-}
-.mobile_course_title{
-  display: block;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-}
+
 
 /*Tablet Courses Section*/
 @media only screen and (max-width: 950px){
@@ -459,9 +443,7 @@ header .right_header{
     font-size: .9rem;
   }
 }
-@media only screen and (max-width: 730px){
 
-}
 
 /* Thesis Section */
  .thesis_exhibit_container{
@@ -500,6 +482,7 @@ header .right_header{
    margin-bottom: 1rem;
  }
 
+
  /*Mobile Thesis Section*/
  @media only screen and (max-width: 680px){
    .left_section .banner_text{
@@ -524,6 +507,7 @@ header .right_header{
    }
  }
 
+
  /* Footer */
  footer{
    border-top: 1px solid black;
@@ -532,14 +516,10 @@ header .right_header{
    display: flex;
    justify-content: space-between;
  }
-
  footer .left_header, footer .right_header{
    display: flex;
    text-align: center;
    align-items: center;
- }
- footer .right_header {
-
  }
  footer .menu {
    display: flex;
