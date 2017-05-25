@@ -24,6 +24,14 @@
           <li><a href="#sign_in">Sign in</a></li>
         </ul>
       </nav>
+      <div class="mobile_header">
+        <ul class="mobile_menu">
+          <li><img src="resources/images/ic-logo.svg" name="colmar academy logo"></li>
+          <li><a href="#on_campus"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#online"><img src="./resources/images/ic-online.svg"></a></li>
+          <li><a href="#for_companies"><img src="./resources/images/ic-login.svg"></a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Upper Banner -->
@@ -40,6 +48,15 @@
             <div class="btn">
             <button><a href="#starthere">Start Here</a></button>
           </div>
+        </div>
+          <div class="right_banner_mobile">
+            <div class="banner_text_mobile">
+              <h1>Learn something new everyday</h1>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+              <div class="btn_mobile">
+              <button><a href="#starthere">Start Here</a></button>
+            </div>
         </div>
       </div>
     </div>
@@ -60,7 +77,8 @@
         <div class="announcements">
           <div class="announcement_section">
             <div class="announcement_img">
-              <img src="resources/images/information-orientation.jpg">
+              <img src="resources/images/information-orientation.jpg" id="desktop_orientation">
+              <img src="resources/images/information-orientation-mobile.jpg" id="mobile_orientation">
             </div>
             <div class="details">
               <h4>Orientation date</h3>
@@ -70,7 +88,8 @@
           </div>
           <div class="announcement_section">
             <div class="announcement_img">
-              <img src="resources/images/information-campus.jpg">
+              <img src="resources/images/information-campus.jpg" id="desktop_campus">
+              <img src="resources/images/information-campus-mobile.jpg" id="mobile_campus">
             </div>
             <div class="details">
               <h4>Our campus</h3>
@@ -80,7 +99,8 @@
           </div>
           <div class="announcement_section">
             <div class="announcement_img">
-              <img src="resources/images/information-guest-lecture.jpg">
+              <img src="resources/images/information-guest-lecture.jpg" id="desktop_lecture">
+              <img src="resources/images/information-guest-lecture-mobile.jpg" id="mobile_lecture">
             </div>
             <div class="details">
               <h4>Our guest lecture</h3>
@@ -150,41 +170,57 @@
           </div>
         </div>
       </div>
+    <!-- Mobile Course List-->
+    <div class="mobile_course_container">
+      <div class="mobile_course_title">
+        <h3> Start Learning </h3>
+      </div>
+      <div class="mobile_course_list">
+        <ul>
+          <li><h5>Software Engineering</h5></li>
+          <li><h5>Computer Art</h5></li>
+          <li><h5>Design</h5></li>
+          <li><h5>Data</h5></li>
+          <li><h5>Business</h5></li>
+          <li><h5>Marketing</h5></li>
+      </ul>
+      </div>
+  </div>
 
     <!-- Thesis Exhibit -->
     <div class="flex_container">
       <div class="thesis_exhibit_container">
-      <div class="left_section">
-        <div class="left_video">
-          <video src="resources/videos/thesis.mp4" name="thesis video" autoplay="true" loop="true" width="100%" height="auto">
+        <div class="left_section">
+          <div class="left_video">
+            <video src="resources/videos/thesis.mp4" name="thesis video" autoplay="true" loop="true" width="100%" height="auto">
+          </div>
+          <div class="banner_text">
+            <h4>Reimagine urban</h4>
+            <p>"curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non accumsan urna.  Phasellus sed consequat ex.  Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p class="quote_author">Emanuel, Sr Strategist at Hiring.com</p>
+          </div>
         </div>
-        <div class="banner_text">
-          <h4>Reimagine urban</h4>
-          <p>"curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commodo lectus, nec consequat neque.  Sed non accumsan urna.  Phasellus sed consequat ex.  Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <p class="quote_author">Emanuel, Sr Strategist at Hiring.com</p>
+        <div class="thesis">
+          <div class="exhibits">
+            <div class="exhibits_img">
+              <img src="resources/images/thesis-fisma.jpg">
+            </div>
+            <div class="exhibits_text">
+              <h4>Fisma: Design and</h4>
+              <h5>Designer showcase of new prototype product</h5>
+            </div>
+          </div>
+          <div class="exhibits">
+            <div class="exhibits_img">
+              <img src="resources/images/thesis-now-and-then.jpg">
+            </div>
+            <div class="exhibits_text">
+              <h4>Now and then</h4>
+              <h5>Research study about New York</h5>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="thesis">
-        <div class="exhibits">
-          <div class="exhibits_img">
-            <img src="resources/images/thesis-fisma.jpg">
-          </div>
-          <div class="exhibits_text">
-            <h4>Fisma: Design and</h4>
-            <h5>Designer showcase of new prototype product</h5>
-          </div>
-        </div>
-        <div class="exhibits">
-          <div class="exhibits_img">
-            <img src="resources/images/thesis-now-and-then.jpg">
-          </div>
-          <div class="exhibits_text">
-            <h4>Now and then</h4>
-            <h5>Research study about New York</h5>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
   </body>
 
